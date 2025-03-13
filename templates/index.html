@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Parking Notifier</title>
+    <style>
+        #video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #video-feed {
+            width: 80%;
+            max-width: 640px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Feed -->
+    <div id="video-container">
+        <h3>Live Camera Feed</h3>
+        <img id="video-feed" src="{{ url_for('video') }}" alt="Video Feed">
+    </div>
+</body>
+</html>
